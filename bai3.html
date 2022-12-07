@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Can-Chi</title>
+</head>
+<body>
+<table>
+  <tr>
+    <p>Mời Nhập Năm Sinh</p>
+  </tr>
+  <tr>
+    <th>Nhập năm sinh</th>
+    <th><input type="number" id="nam_sinh"></th>
+  </tr>
+  <tr>
+    <td>
+    <button onclick="tinhGiap()">Tính</button>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <h3 id="age_is"></h3>
+    </th>
+    <th>
+      <h3 id="age_is1"></h3>
+    </th>
+  </tr>
+</table>
+</body>
+<script>
+  function tinhGiap(){
+  let age = document.getElementById("nam_sinh").value;
+  let b = age%10 ;
+  let c = age%12 ;
+  switch(b) {
+    case 0:
+      document.getElementById("age_is").innerHTML = "Canh"
+      break;
+    case 1:
+      document.getElementById("age_is").innerHTML = "Thân"
+      break;
+    case 2:
+      document.getElementById("age_is").innerHTML = "Nhâm"
+      break;
+    case 3:
+      document.getElementById("age_is").innerHTML = "Quý"
+      break;
+    case 4:
+      document.getElementById("age_is").innerHTML = "Giáp"
+      break;
+    case 5:
+      document.getElementById("age_is").innerHTML = "Át"
+      break;
+    case 6:
+      document.getElementById("age_is").innerHTML = "Bính"
+      break;
+    case 7:
+      document.getElementById("age_is").innerHTML = "Đinh"
+      break;
+    case 8:
+      document.getElementById("age_is").innerHTML = "Mậu"
+      break;
+    case 9:
+      document.getElementById("age_is").innerHTML = "Ký"
+      break;
+  }
+      switch (c){
+        case 0:
+          document.getElementById("age_is1").innerHTML = "Thân"
+              break;
+        case 1:
+          document.getElementById("age_is1").innerHTML = "Dậu"
+              break;
+        case 2:
+          document.getElementById("age_is1").innerHTML = "Tuất"
+              break;
+        case 3:
+          document.getElementById("age_is1").innerHTML = "Hợi"
+              break;
+        case 4:
+          document.getElementById("age_is1").innerHTML = "Tý"
+              break;
+        case 5:
+          document.getElementById("age_is1").innerHTML = "Sửu"
+              break;
+        case 6:
+          document.getElementById("age_is1").innerHTML = "Dần"
+              break;
+        case 7:
+          document.getElementById("age_is1").innerHTML = "Mão"
+              break;
+        case 8:
+          document.getElementById("age_is1").innerHTML = "Thìn"
+              break;
+        case 9:
+          document.getElementById("age_is1").innerHTML = "Tỵ"
+              break;
+        case 10:
+          document.getElementById("age_is1").innerHTML = "Ngọ"
+              break;
+        case 11:
+          document.getElementById("age_is1").innerHTML = "Mùi"
+      }
+
+  }
+</script>
+</html>

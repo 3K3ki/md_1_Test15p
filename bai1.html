@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tuổi con</title>
+</head>
+<body>
+<p>Nhập tuổi em</p>
+<input type="text" id="con">
+<button id="" onclick="tinhTuoi()">tinh</button>
+<h1 id="ket_qua"></h1>
+<h1 id="ket_qua2"></h1>
+</body>
+<script>
+  function tinhTuoi(){
+    let con = +document.getElementById("con").value;
+    let anh = +con + 3;
+    let bo = +anh * 6;
+    document.getElementById("ket_qua").innerHTML="Tuổi anh: " + anh;
+    document.getElementById("ket_qua2").innerHTML="Tuổi bố: " +bo;
+  }
+
+</script>
+</html>
